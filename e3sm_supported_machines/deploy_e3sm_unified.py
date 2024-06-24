@@ -71,7 +71,7 @@ def install_mache_from_branch(activate_install_env, fork, branch):
                f'mkdir -p build_mache && ' \
                f'cd build_mache && ' \
                f'git clone -b {branch} ' \
-               f'git@github.com:{fork}.git mache && ' \
+               f'https://github.com/{fork} mache && ' \
                f'cd mache && ' \
                f'conda install -y --file spec-file.txt && ' \
                f'python -m pip install --no-deps .'
